@@ -1,0 +1,9 @@
+<h1 id='sending-requests'>Sending Requests</h1>
+<blockquote>
+<p>Once you have finished adding your configuration and saved the file, you can run-</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>prawf run
+</code></pre></div>
+<p>Using prawf, you can send requests to your API endpoints and view the responses.</p>
+
+<p>You can configure your endpoint URLs, paths and methods on your <code>prawf.json file</code>. (<a href="#available-configurations">See Available Configurations</a>)</p>
