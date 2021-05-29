@@ -1,0 +1,768 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>prawf Docs</title>
+
+    <link href="images/favicon-087afdae.ico" rel="icon" type="image/ico" />
+    
+    <style media="screen">
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <style media="print">
+      * {
+        -webkit-transition:none!important;
+        transition:none!important;
+      }
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #586e75;
+}
+.highlight .err {
+  color: #002b36;
+  background-color: #dc322f;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  color: #657b83;
+}
+.highlight .cp {
+  color: #b58900;
+}
+.highlight .nt {
+  color: #b58900;
+}
+.highlight .o, .highlight .ow {
+  color: #93a1a1;
+}
+.highlight .p, .highlight .pi {
+  color: #93a1a1;
+}
+.highlight .gi {
+  color: #859900;
+}
+.highlight .gd {
+  color: #dc322f;
+}
+.highlight .gh {
+  color: #268bd2;
+  background-color: #002b36;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #6c71c4;
+}
+.highlight .kc {
+  color: #cb4b16;
+}
+.highlight .kt {
+  color: #cb4b16;
+}
+.highlight .kd {
+  color: #cb4b16;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #859900;
+}
+.highlight .sa {
+  color: #6c71c4;
+}
+.highlight .sr {
+  color: #2aa198;
+}
+.highlight .si {
+  color: #d33682;
+}
+.highlight .se {
+  color: #d33682;
+}
+.highlight .nn {
+  color: #b58900;
+}
+.highlight .nc {
+  color: #b58900;
+}
+.highlight .no {
+  color: #b58900;
+}
+.highlight .na {
+  color: #268bd2;
+}
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  color: #859900;
+}
+.highlight .ss {
+  color: #859900;
+}
+    </style>
+    <link href="stylesheets/screen-c9d8fa83.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-953e3353.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-a9fde460.js"></script>
+
+    <script>
+      $(function() { setupCodeCopy(); });
+    </script>
+  </head>
+
+  <body class="index" data-languages="[]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar-cad8cdcb.png" alt="" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo-b26a7af7.png" class="logo" alt="" />
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#quick-start" class="toc-h1 toc-link" data-title="Quick Start">Quick Start</a>
+          </li>
+          <li>
+            <a href="#installation" class="toc-h1 toc-link" data-title="Installation">Installation</a>
+          </li>
+          <li>
+            <a href="#configuring-tests" class="toc-h1 toc-link" data-title="Configuring Tests">Configuring Tests</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#available-configurations" class="toc-h2 toc-link" data-title="Available Configurations">Available Configurations</a>
+                  </li>
+                  <li>
+                    <a href="#example-prawf-json-file" class="toc-h2 toc-link" data-title="Example prawf.json file">Example prawf.json file</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#sending-requests" class="toc-h1 toc-link" data-title="Sending Requests">Sending Requests</a>
+          </li>
+          <li>
+            <a href="#running-tests" class="toc-h1 toc-link" data-title="Running tests">Running tests</a>
+          </li>
+          <li>
+            <a href="#contributing" class="toc-h1 toc-link" data-title="Contributing">Contributing</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#setting-up-the-development-environment" class="toc-h2 toc-link" data-title="Setting up the development environment">Setting up the development environment</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li>Made with ❤️ by <a href='https://github.com/navendu-pottekkat' target="_blank">Navendu Pottekkat</a></li>
+            <li><a href='https://github.com/prawf/prawf-cli/blob/master/LICENSE' target="_blank">GNU General Public License v3.0</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='introduction'>Introduction</h1><div class="highlight"><pre class="highlight shell tab-shell"><code>prawf run
+
+INFO[0000] File loaded.                                  <span class="nv">file</span><span class="o">=</span>prawf.json
+INFO[0000] Running test.                                 <span class="nb">test</span><span class="o">=</span>sample-test <span class="nv">url</span><span class="o">=</span><span class="s2">"https://jsonplaceholder.typicode.com"</span>
+
+INFO[0000] Creating request.                             <span class="nv">method</span><span class="o">=</span>GET <span class="nv">name</span><span class="o">=</span>get-post <span class="nv">path</span><span class="o">=</span>/posts
+INFO[0000] Response received.                            status <span class="nv">code</span><span class="o">=</span><span class="s2">"200 OK"</span>
+INFO[0000] <span class="o">[</span>
+  <span class="o">{</span>
+    <span class="s2">"userId"</span>: 1,
+    <span class="s2">"id"</span>: 1,
+    <span class="s2">"title"</span>: <span class="s2">"sunt aut facere repellat provident occaecati excepturi optio reprehenderit"</span>,
+    <span class="s2">"body"</span>: <span class="s2">"quia et suscipit</span><span class="se">\n</span><span class="s2">suscipit recusandae consequuntur expedita et cum</span><span class="se">\n</span><span class="s2">reprehenderit molestiae ut ut quas totam</span><span class="se">\n</span><span class="s2">nostrum rerum est autem sunt rem eveniet architecto"</span>
+  <span class="o">}</span>
+<span class="o">]</span> 
+
+INFO[0000] Creating request.                             <span class="nv">method</span><span class="o">=</span>POST <span class="nv">name</span><span class="o">=</span>post-post <span class="nv">path</span><span class="o">=</span>/posts
+INFO[0001] Response received.                            status <span class="nv">code</span><span class="o">=</span><span class="s2">"201 Created"</span>
+INFO[0001] <span class="o">{</span>
+  <span class="s2">"body"</span>: <span class="s2">"If you haven't already, check out prawf to test your REST API endpoints"</span>,
+  <span class="s2">"title"</span>: <span class="s2">"prawf is amazing!"</span>,
+  <span class="s2">"userId"</span>: 1,
+  <span class="s2">"id"</span>: 101
+<span class="o">}</span> 
+</code></pre></div>
+<p>🧪 <a href="https://github.com/prawf/prawf-cli">prawf</a> is a lightweight and easy-to-use HTTP API testing framework.</p>
+
+<p>You can easily define your tests in a <code>prawf.json</code> file and use the <code>prawf</code> CLI to run tests with it.</p>
+
+<p>Try the <a href="#quick-start">Quick Start</a> guide to run prawf without any configurations.</p>
+
+<p>Here are some reasons why you might want to use prawf-</p>
+
+<p>🏋️‍♂️ Lightweight- Does not add any overhead to your software</p>
+
+<p>🧰 Cross platform- Compiled to a binary and works on Windows, Mac and Linux</p>
+
+<p>📝 Declarative tests- Forget all those flags you use to send a request and write your tests in a file</p>
+
+<p>🧱 Structured logs- Get structured logs so you do not have to spend hours debugging</p>
+
+<p>🚰 Built-in CI/CD support- Ship your applications bug free by adding to your CI/CD pipelines</p>
+
+<p>🔓 Free and open-source- It is and it always will be</p>
+<h1 id='quick-start'>Quick Start</h1>
+<blockquote>
+<p>Create a new <code>prawf.json</code> config file-</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>prawf init
+</code></pre></div>
+<blockquote>
+<p>This will create the file in your current directory-</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>prawf.json file not found. Would you like to create one? <span class="o">[</span>y/n]? y
+INFO[0002] File created.                                 <span class="nv">file</span><span class="o">=</span>prawf.json
+INFO[0002] File loaded.                                  <span class="nv">file</span><span class="o">=</span>prawf.json
+</code></pre></div>
+<blockquote>
+<p>Default <code>prawf.json</code> file-</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"current"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sample-test"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"tests"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"sample-test"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://jsonplaceholder.typicode.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"methods"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"get-post"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/posts"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"get"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"query"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"expect"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"contain"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">22</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nl">"keys"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="s2">"id"</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"equal"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">22</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"post-post"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/posts"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"post"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"header"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"Content-type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/json; charset=UTF-8"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"body"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"If you haven't already, check out prawf to test your REST API endpoints"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"prawf is amazing!"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"userId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"expect"</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Send requests to endpoints specified in the <code>prawf.json</code> file-</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>prawf run
+
+INFO[0000] File loaded.                                  <span class="nv">file</span><span class="o">=</span>prawf.json
+INFO[0000] Running test.                                 <span class="nb">test</span><span class="o">=</span>sample-test <span class="nv">url</span><span class="o">=</span><span class="s2">"https://jsonplaceholder.typicode.com"</span>
+
+INFO[0000] Creating request.                             <span class="nv">method</span><span class="o">=</span>GET <span class="nv">name</span><span class="o">=</span>get-post <span class="nv">path</span><span class="o">=</span>/posts
+INFO[0000] Response received.                            status <span class="nv">code</span><span class="o">=</span><span class="s2">"200 OK"</span>
+INFO[0000] <span class="o">[</span>
+  <span class="o">{</span>
+    <span class="s2">"userId"</span>: 1,
+    <span class="s2">"id"</span>: 1,
+    <span class="s2">"title"</span>: <span class="s2">"sunt aut facere repellat provident occaecati excepturi optio reprehenderit"</span>,
+    <span class="s2">"body"</span>: <span class="s2">"quia et suscipit</span><span class="se">\n</span><span class="s2">suscipit recusandae consequuntur expedita et cum</span><span class="se">\n</span><span class="s2">reprehenderit molestiae ut ut quas totam</span><span class="se">\n</span><span class="s2">nostrum rerum est autem sunt rem eveniet architecto"</span>
+  <span class="o">}</span>
+<span class="o">]</span> 
+
+INFO[0000] Creating request.                             <span class="nv">method</span><span class="o">=</span>POST <span class="nv">name</span><span class="o">=</span>post-post <span class="nv">path</span><span class="o">=</span>/posts
+INFO[0001] Response received.                            status <span class="nv">code</span><span class="o">=</span><span class="s2">"201 Created"</span>
+INFO[0001] <span class="o">{</span>
+  <span class="s2">"body"</span>: <span class="s2">"If you haven't already, check out prawf to test your REST API endpoints"</span>,
+  <span class="s2">"title"</span>: <span class="s2">"prawf is amazing!"</span>,
+  <span class="s2">"userId"</span>: 1,
+  <span class="s2">"id"</span>: 101
+<span class="o">}</span>
+</code></pre></div>
+<blockquote>
+<p>Test the endpoints as specified in the <code>prawf.json</code> file-</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>prawf <span class="nb">test
+
+</span>INFO[0000] File loaded.                                  <span class="nv">file</span><span class="o">=</span>prawf.json
+INFO[0000] Running test.                                 <span class="nb">test</span><span class="o">=</span>sample-test <span class="nv">url</span><span class="o">=</span><span class="s2">"https://jsonplaceholder.typicode.com"</span>
+
+INFO[0000] Creating request.                             <span class="nv">method</span><span class="o">=</span>GET <span class="nv">name</span><span class="o">=</span>get-post <span class="nv">path</span><span class="o">=</span>/posts
+INFO[0000] Response received.                            status <span class="nv">code</span><span class="o">=</span><span class="s2">"200 OK"</span>
+INFO[0000] <span class="o">[</span>
+  <span class="o">{</span>
+    <span class="s2">"userId"</span>: 1,
+    <span class="s2">"id"</span>: 1,
+    <span class="s2">"title"</span>: <span class="s2">"sunt aut facere repellat provident occaecati excepturi optio reprehenderit"</span>,
+    <span class="s2">"body"</span>: <span class="s2">"quia et suscipit</span><span class="se">\n</span><span class="s2">suscipit recusandae consequuntur expedita et cum</span><span class="se">\n</span><span class="s2">reprehenderit molestiae ut ut quas totam</span><span class="se">\n</span><span class="s2">nostrum rerum est autem sunt rem eveniet architecto"</span>
+  <span class="o">}</span>
+<span class="o">]</span> 
+
+ERRO[0000] Expected response.                            <span class="nv">contain</span><span class="o">=</span><span class="nb">yes </span><span class="nv">equal</span><span class="o">=</span><span class="nb">yes </span><span class="nv">keys</span><span class="o">=</span><span class="nb">yes test</span><span class="o">=</span>fail
+ERRO[0000] <span class="o">{</span>
+  <span class="s2">"id"</span>: 22
+  <span class="o">}</span>                              <span class="nb">type</span><span class="o">=</span>equal
+ERRO[0000] <span class="o">{</span>
+  <span class="s2">"id"</span>: 22
+  <span class="o">}</span>                              <span class="nb">type</span><span class="o">=</span>contain
+ERRO[0000] <span class="o">[</span><span class="nb">id</span><span class="o">]</span>                                          <span class="nb">type</span><span class="o">=</span>keys
+
+INFO[0000] Creating request.                             <span class="nv">method</span><span class="o">=</span>POST <span class="nv">name</span><span class="o">=</span>post-post <span class="nv">path</span><span class="o">=</span>/posts
+INFO[0001] Response received.                            status <span class="nv">code</span><span class="o">=</span><span class="s2">"201 Created"</span>
+INFO[0001] <span class="o">{</span>
+  <span class="s2">"body"</span>: <span class="s2">"If you haven't already, check out prawf to test your REST API endpoints"</span>,
+  <span class="s2">"title"</span>: <span class="s2">"prawf is amazing!"</span>,
+  <span class="s2">"userId"</span>: 1,
+  <span class="s2">"id"</span>: 101
+<span class="o">}</span> 
+</code></pre></div>
+<aside class="notice">
+  Check the window on the right for step by step walkthrough on the commands.
+</aside>
+
+<ul>
+<li><p>Install prawf- See the <a href="#installation">Installation</a> guide.</p></li>
+<li><p>Open up your project folder. If you do have a project yet and is just testing prawf, you can create an empty folder.</p></li>
+<li><p>Create a new <code>prawf.json</code> config file.</p></li>
+</ul>
+
+<aside class="notice">
+    By default, prawf will initialise the <code>prawf.json</code> configuration file with the API endpoints from <a href="https://jsonplaceholder.typicode.com/" target="_blank">jsonplaceholder.typicode.com</a>.
+
+    You can use this for testing out the capabilities of prawf. 
+</aside>
+
+<ul>
+<li><p>Edit the <code>prawf.json</code> configuration file if you are testing a custom application. You can leave it as it is if you are just testing out prawf. See <a href="#configuring-prawf.json">Configuring prawf.json</a> for more details.</p></li>
+<li><p>Send requests to endpoints specified in the <code>prawf.json</code> file.</p></li>
+<li><p>Test the endpoints as specified in the <code>prawf.json</code> file.</p></li>
+</ul>
+
+<aside class="success">
+    Awesome! You have successfully run a prawf test. See the <a href="http://" target="_blank">Tutorials</a> for specific tutorials on how to use prawf.
+</aside>
+<h1 id='installation'>Installation</h1>
+<blockquote>
+<p>Create a new directory to download prawf-</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>mkdir prawf
+</code></pre></div>
+<blockquote>
+<p>Download prawf (<a href="https://github.com/prawf/prawf-cli/releases">Available downloads</a>). Replace the URL below with the URL to the <code>tar.gz</code> file you require-</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl -OL https://github.com/prawf/prawf-cli/releases/latest/download/prawf_0.0.1-alpha_Linux_x86_64.tar.gz
+</code></pre></div>
+<blockquote>
+<p>Extract the package. Replace the file name with the filename of your download-</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>tar -xvzf prawf_0.0.1-alpha_Linux_x86_64.tar.gz
+</code></pre></div>
+<blockquote>
+<p>Add prawf to your path(Linux, macOS)-</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>export PATH=$PWD:$PATH
+</code></pre></div>
+<blockquote>
+<p>Check your installation-</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>prawf version
+</code></pre></div>
+<p>prawf is available on Windows, Mac and Linux. Check the <a href="https://github.com/prawf/prawf-cli/releases">releases</a> for a list of available downloads.</p>
+
+<aside class="notice">
+  Check the window on the right for step by step walkthrough on the commands.
+</aside>
+
+<p>See the <a href="#quick-start">Quick Start</a> guide to get started.</p>
+<h1 id='configuring-tests'>Configuring Tests</h1>
+<blockquote>
+<p>To start, open the <code>prawf.json</code> file in your project folder. If you do not have a <code>prawf.json</code> file, run-</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>prawf init
+</code></pre></div>
+<p>The <code>prawf.json</code> config file will contain all your tests. You can define tests by specifying the endpoints request details and provide the expected responses to test with.</p>
+
+<p>See the <a href="#quick-start">Quick Start</a> guide for more details on getting started.</p>
+
+<p>Once you have the <code>prawf.json</code> file initialised, open it on a text editor.</p>
+<h2 id='available-configurations'>Available Configurations</h2>
+<p>The following could be configured in the <code>prawf.json</code> file. See the <a href="#example-prawf.json-file">example below</a>-</p>
+
+<p><code>current</code>- Represents the focused test. Users can define multiple tests and the test mentioned in <code>current</code> will be used for running tests.</p>
+
+<p><code>tests</code> - Array of tests. Users can define multiple tests here with a test name as mentioned below.</p>
+
+<p><code>test-name</code>- Name of the test. Its value contains the test.</p>
+
+<p><code>url</code>- The URL the current test is interested in.</p>
+
+<p><code>methods</code>- Array of methods to test the URL on.</p>
+
+<p><code>name</code>- Name of the method.</p>
+
+<p><code>path</code>- The path which will be added to the URL.</p>
+
+<p><code>method</code>- Type of HTTP request.</p>
+
+<p><code>query</code>- The query to add to the request.</p>
+
+<p><code>header</code>- The header to add to the request.</p>
+
+<p><code>body</code>- The body to add to the request.</p>
+
+<p><code>expect</code>- Represents what to look for in the response for testing.</p>
+
+<p><code>keys</code>- To check if the keys mentioned are present in the response.</p>
+
+<p><code>contain</code>- To check if the key-value pairs are present in the response.</p>
+
+<p><code>equal</code>- To check if the response if exactly equal to the present value.</p>
+<h2 id='example-prawf-json-file'>Example prawf.json file</h2>
+<blockquote>
+<p>An example json file created when you run <code>prawf init</code></p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"current"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sample-test"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"tests"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"sample-test"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://jsonplaceholder.typicode.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"methods"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"get-pass"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/posts"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"get"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"query"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"expect"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"contain"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"get-fail"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/posts"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"get"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"query"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"expect"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"keys"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="s2">"uuid"</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"post-pass"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/posts"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"post"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"header"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"Content-type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/json; charset=UTF-8"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"body"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"If you haven't already, check out prawf to test your REST API endpoints"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"prawf is amazing!"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"userId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"expect"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"equal"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"If you haven't already, check out prawf to test your REST API endpoints"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"prawf is amazing!"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"userId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"put-pass"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/posts/1"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"put"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"header"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"Content-type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/json; charset=UTF-8"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"body"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Give us a star on GitHub/prawf!"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"prawf is awesome!"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"userId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"expect"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"contain"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"prawf is awesome!"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>This is an example <code>prawf.json</code> config file that is generated when you run <code>prawf init</code>.</p>
+
+<p>You can use this config file as a template to write your own tests.</p>
+<h1 id='sending-requests'>Sending Requests</h1>
+<blockquote>
+<p>Once you have finished adding your configuration and saved the file, you can run-</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>prawf run
+</code></pre></div>
+<p>Using prawf, you can send requests to your API endpoints and view the responses.</p>
+
+<p>You can configure your endpoint URLs, paths and methods on your <code>prawf.json file</code>. (<a href="#available-configurations">See Available Configurations</a>)</p>
+<h1 id='running-tests'>Running tests</h1>
+<blockquote>
+<p>Once the configuration is done, run-</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>prawf test
+</code></pre></div>
+<p>You can also automate the testing process by declaring it in the <code>prawf.json</code> file. (<a href="#available-configurations">See Available Configurations</a>)</p>
+
+<p>These tests will be run automatically and structured logs will printed on the screen.</p>
+<h1 id='contributing'>Contributing</h1>
+<p>Thank you for your interest in contributing to prawf!</p>
+
+<p>📃 🐛 💡 ⚙️ Contributions of any kind are welcome here! It could be changes to documentation, reporting bugs, requesting for features and also contributing code.</p>
+
+<p>Before you start, please go through the <a href="CODE_OF_CONDUCT.md">Code of Conduct</a>.</p>
+
+<p>All changes are made through <a href="https://github.com/prawf/prawf-cli/pulls">pull requests</a>. Please check the <a href="https://guides.github.com/introduction/flow/index.html">GithHub Flow</a></p>
+
+<p>We use <a href="https://github.com/prawf/prawf-cli/discussions">discussions</a> for communicating. Please use it to share your ideas.</p>
+
+<p>To report bugs and track features, we use issues. Please use the appropriate issue template while creating a new issue.</p>
+
+<p>The docs are built in a <a href="https://github.com/prawf/prawf.github.io">separate repository</a>. Any changes to the docs should be made there.</p>
+<h2 id='setting-up-the-development-environment'>Setting up the development environment</h2>
+<blockquote>
+<p>Fork this repo and clone your fork to your local machine-</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>git clone https://github.com/&lt;your-user-name&gt;/prawf-cli.git
+</code></pre></div>
+<blockquote>
+<p>Or</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>gh repo clone &lt;your-user-name&gt;/prawf-cli
+</code></pre></div>
+<blockquote>
+<p>Inside the repo run-</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>make
+</code></pre></div>
+<blockquote>
+<p>You can then run-</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>./prawf &lt;name of the command&gt;
+</code></pre></div>
+<p>prawf-cli is written in <a href="https://golang.org/">Golang</a>. </p>
+
+<p>To run the development environment, you should install the latest version of Go. See their <a href="https://golang.org/dl/">downloads page</a>.</p>
+
+      </div>
+      <div class="dark-box">
+      </div>
+    </div>
+  </body>
+</html>
