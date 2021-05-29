@@ -8,6 +8,10 @@ toc_footers:
 includes:
   - quick_start
   - installation
+  - configuring
+  - sending_requests
+  - running_tests
+  - contributing
 
 search: true
 
@@ -47,6 +51,8 @@ INFO[0001] {
 
 You can easily define your tests in a `prawf.json` file and use the `prawf` CLI to run tests with it.
 
+Try the [Quick Start](#quick-start) guide to run prawf without any configurations.
+
 Here are some reasons why you might want to use prawf-
 
 🏋️‍♂️ Lightweight- Does not add any overhead to your software
@@ -59,4 +65,4 @@ Here are some reasons why you might want to use prawf-
 
 🚰 Built-in CI/CD support- Ship your applications bug free by adding to your CI/CD pipelines
 
-🔓 Free and open-source- It always will be
+🔓 Free and open-source- It is and it always will be

@@ -1,6 +1,6 @@
 # Quick Start
 
-> Create and initialise the `prawf.json` configuartion file-
+> Create a new `prawf.json` config file-
 
 ```shell
 prawf init
@@ -61,7 +61,7 @@ INFO[0002] File loaded.                                  file=prawf.json
 }
 ```
 
-> Run prawf to see the responses-
+> Send requests to endpoints specified in the `prawf.json` file-
 
 ```shell
 prawf run
@@ -90,7 +90,7 @@ INFO[0001] {
 }
 ```
 
-> Run `prawf test` to assert the responses-
+> Test the endpoints as specified in the `prawf.json` file-
 
 ```shell
 prawf test
@@ -128,11 +128,15 @@ INFO[0001] {
 } 
 ```
 
-* Install prawf- See the [Installation] docs.
+<aside class="notice">
+  Check the window on the right for step by step walkthrough on the commands.
+</aside>
+
+* Install prawf- See the [Installation](#installation) guide.
 
 * Open up your project folder. If you do have a project yet and is just testing prawf, you can create an empty folder.
 
-* Run `prawf init` to create a `prawf.json` configuration file and initialise it.
+* Create a new `prawf.json` config file.
 
 <aside class="notice">
     By default, prawf will initialise the <code>prawf.json</code> configuration file with the API endpoints from <a href="https://jsonplaceholder.typicode.com/" target="_blank">jsonplaceholder.typicode.com</a>.
@@ -141,11 +145,11 @@ INFO[0001] {
 </aside>
 
 
-* Edit the `prawf.json` configuration file if you are testing a custom application. You can leave it as it is if you are just testing out prawf.
+* Edit the `prawf.json` configuration file if you are testing a custom application. You can leave it as it is if you are just testing out prawf. See [Configuring prawf.json](#configuring-prawf.json) for more details.
 
-* Run `prawf run` to send requests to the endponits specified in your configuration file.
+* Send requests to endpoints specified in the `prawf.json` file.
 
-* Run `prawf test` to test the endpoints with the expected responses.
+* Test the endpoints as specified in the `prawf.json` file.
 
 <aside class="success">
     Awesome! You have successfully run a prawf test. See the <a href="http://" target="_blank">Tutorials</a> for specific tutorials on how to use prawf.
